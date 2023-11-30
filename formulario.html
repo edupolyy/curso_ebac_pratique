@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário EBAC</title>
+    <style>
+        body{
+            padding-top: 30vh;
+        }
+        h2{
+            display: flex;
+            justify-content: center;
+        }
+        div{
+            display: flex;
+        justify-content: center;
+        padding: 10px;
+        }
+        label{
+            padding-right: 10px;
+        }
+        .submit_button {
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Formulário de Cadastro</h2>
+    <form>
+        <div>
+            <label for=“nome”>Nome:</label>
+            <input type=“text” id=“nome” name=“nome”>
+        </div>
+        <div>
+            <label for=“email”>E-mail:</label>
+            <input type=“email” id=“email” name=“email”>
+        </div>
+        <div>
+            <label for=“senha”>Senha:</label>
+            <input type=“password” id=“senha” name=“senha”>
+        </div>
+        <div class="submit_button">
+        <button type="submit"> Cadastrar</button>
+        </div>
+    </form>
+</body>
+</html>
