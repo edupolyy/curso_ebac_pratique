@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.inputs{
+        display: flex; 
+        align-items: center;
+        flex-direction: column;
+        margin-top: 300px;
+        
+}
+
+input {
+    margin: 5px;
+    border: solid 2px #211bce96;
+}
+</style>
+<body>
+    <form class="inputs">
+        <input type="number" id="campoA" name="campoA" required placeholder="Campo A">
+        <input type="number" id="campoB" name="campoB "required placeholder="Campo B">
+        <button type="button" onclick="validarForm ()">Submit</button>
+    </form>
+<script> function validarForm () {
+        let campoA = parseInt(document.getElementById ("campoA").value);
+        let campoB = parseInt(document.getElementById ("campoB").value);
+        
+            if (campoA > campoB) {
+            alert("Formulário inválido");
+        } else 
+        {
+            alert("Formulário válido");
+            }
+        }
+</script>
+</body>
+</html>
