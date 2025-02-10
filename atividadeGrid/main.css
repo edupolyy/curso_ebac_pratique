@@ -1,0 +1,84 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.sobre img {
+    width: 60%;
+    max-width: 450px;
+    border-radius: 4%;
+}
+
+.sobre .texto {
+    width: 50%;
+}
+
+.texto h1 {
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:darkred;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.produto {
+    width: 22%;
+    min-width: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.produto img {
+    width: 100%;
+    max-width: 150px;
+}
+
+.botao {
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+@media (max-width: 1023px) {
+    .sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+    .sobre img, .sobre .texto {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .produto {
+        width: 45%;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <div class="container">
+        <section class="sobre">
+            <img src="loja.jpg" alt="Imagem da Loja">
+            <div class="texto">
+                <h1>Vest Center</h1>
+                <h2>Artigos Esportivos</h2>
+                <p>Bem-vindo à nossa loja! 
+                    Aqui você encontra os melhores produtos com os melhores preços.</p>
+            </div>
+        </section>
+        <section class="produtos">
+            <div class="produto">
+                <img src="produto1.jpg" alt="Produto 1">
+                <h3>A.C Milan</h3>
+                <p>Edição especial 20/21</p>
+                <button class="botao">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="produto2.jpg" alt="Produto 2">
+                <h3>Real Madrid</h3>
+                <p>Primeiro uniforme 23/24</p>
+                <button class="botao">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="produto3.jpg" alt="Produto 3">
+                <h3>PSG</h3>
+                <p>Primeiro uniforme 23/24</p>
+                <button class="botao">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="produto4.jpg" alt="Produto 4">
+                <h3>Barcelona</h3>
+                <p>Primeiro uniforme 24/25</p>
+                <button class="botao">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $(".botao").click(function() {
+                alert("Produto adicionado ao carrinho!");
+            });
+        });
+    </script>
+</body>
+</html>
